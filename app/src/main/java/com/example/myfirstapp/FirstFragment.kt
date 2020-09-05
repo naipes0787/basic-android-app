@@ -28,7 +28,10 @@ class FirstFragment : Fragment() {
 
         // Set click listener to the random button
         view.findViewById<Button>(R.id.random_button).setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            val showCountTextView = view.findViewById<TextView>(R.id.textview_first)
+            val currentCount = showCountTextView.text.toString().toInt()
+            val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(currentCount)
+            findNavController().navigate(action)
         }
 
         // Set click listener to the greeting button
