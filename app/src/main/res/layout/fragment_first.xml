@@ -17,7 +17,7 @@
         android:paddingTop="5dp"
         android:paddingRight="20dp"
         android:paddingBottom="5dp"
-        android:text="@string/hello_first_fragment"
+        android:text="@string/number_showing"
         android:textColor="@android:color/white"
         android:textSize="72sp"
         app:layout_constraintBottom_toBottomOf="parent"
